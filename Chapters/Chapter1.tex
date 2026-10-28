@@ -1,0 +1,571 @@
+% Chapter Template
+
+\chapter{Introduction} % Main chapter title
+
+\label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 1. \emph{Introduction}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%---------------------------------------------------------------------------------------
+%\section{}
+
+
+
+Remote hiring and online technical assessments have become a major part of modern recruitment processes worldwide. Research shows that although digital interview platforms provide flexibility and accessibility, the lack of structured workflows and integrated tools often reduces evaluation effectiveness. The use of multiple disconnected systems for video calls, coding tests, and feedback management creates inefficiencies for both interviewers and candidates. Issues such as poor coordination, lack of real-time collaboration, and absence of standardized evaluation methods further complicate the hiring process.
+
+The methodology used in this platform is important because it enables structured and real-time management of technical interviews within a single system. It provides seamless scheduling, instant interview session creation, and integrated tools such as live video communication and collaborative coding environments. Real-time interaction combined with synchronized data handling reduces delays and improves the overall interview experience. By integrating role-based access control and secure authentication, the system ensures that interview workflows remain organized and reliable. Additionally, post-interview feedback and recording management features help maintain consistency in evaluation and decision-making.
+
+Traditional technical interview systems generally follow one of the following approaches categories:
+\newline
+• Standalone video conferencing tools: Provide communication but lack coding and evaluation features. \newline
+• Online coding platforms: Offer coding tests but do not support real-time interaction. \newline
+• Applicant tracking systems: Manage candidate data but lack live interview capabilities.
+
+Among these approaches, integrated real-time interview platforms provide the best balance between collaboration, usability, and efficiency with advancements in modern web technologies. This project focuses on developing a simplified live coding interview platform using a full-stack architecture based on Next.js, Convex for backend services, and Clerk authentication, without relying on complex infrastructure management.
+
+The key goals of this project include: \newline
+• Developing a real-time live coding interview platform. \newline
+• Enabling structured scheduling and management of interview sessions. \newline
+• Providing integrated video communication and collaborative code editing. \newline
+• Implementing secure authentication and role-based access control.
+
+This project integrates real-time communication, collaborative tools, and modern full-stack technologies with scalable deployment practices. It offers a practical, efficient, and reliable solution for technical hiring.
+
+
+
+\section{Aim \& Objectives}
+
+The aim of this project is to develop a \textbf{Live Coding Interview Platform}
+that provides an integrated and structured environment for conducting technical interviews.
+The platform enables seamless interview scheduling, real-time communication, and
+collaborative coding within a single system. It incorporates modern web technologies
+to deliver a scalable, user-friendly, and efficient solution for remote hiring processes,
+similar to simplified coding interview platforms.
+
+The objectives of this project are:
+\begin{itemize}
+  \item To design and implement a full-stack live interview platform using
+        Next.js and TypeScript.
+  \item To enable real-time video and audio communication using Stream Video SDK.
+  \item To develop an interactive code editor for live coding with syntax highlighting.
+  \item To provide features such as screen sharing, recording, and real-time collaboration.
+  \item To implement secure authentication and role-based access control using
+        Clerk services.
+  \item To manage real-time data and backend operations efficiently using Convex.
+  \item To develop a dashboard for interview scheduling, feedback, and evaluation management.
+\end{itemize}
+
+% Chapter Template
+
+\chapter{Literature Review}
+\label{Chapter2}
+\lhead{Chapter 2. \emph{Literature Review}}
+
+\section{Existing Systems}
+
+With the rapid growth of remote hiring and digital recruitment processes, several
+online technical interview systems and platforms have been developed to support
+organizations in evaluating candidates across different domains. Existing interview
+platforms can broadly be classified into video conferencing tools, online coding
+platforms, and applicant tracking systems (ATS).
+
+Video conferencing platforms such as Zoom, Google Meet, and Microsoft Teams
+are widely used for conducting remote interviews due to their ease of access and
+real-time communication capabilities. Interviewers can interact with candidates
+through video and audio; however, these platforms primarily focus on communication
+rather than technical assessment. They lack integrated coding environments and
+structured evaluation tools, requiring users to rely on additional external systems.
+
+Online coding platforms such as HackerRank, CodeSignal, and LeetCode provide
+environments for coding assessments and problem-solving. These systems offer
+features like code editors, automated evaluation, and test cases. While they are
+effective for assessing programming skills, they often lack real-time interaction
+features such as live video communication and collaborative discussion, which are
+essential for a complete interview experience.
+
+Applicant Tracking Systems (ATS) such as Greenhouse and Lever are commonly
+used by organizations to manage candidate information, job applications, and hiring
+workflows. These systems help streamline recruitment processes and maintain
+records efficiently. However, they do not provide built-in capabilities for conducting
+live technical interviews, requiring integration with external tools for communication
+and evaluation.
+
+In recent years, modern platforms have attempted to combine communication and
+coding features into a single system. Some solutions integrate video calls with shared
+coding environments, improving collaboration during interviews. However, such
+systems are often complex, expensive, or difficult to deploy for small-scale
+applications and independent developers.
+
+Overall, existing systems have significantly improved remote hiring processes, but
+they still face challenges related to integration, real-time collaboration, and
+structured evaluation workflows. These limitations highlight the need for a unified
+live coding interview platform that combines communication, coding, and evaluation
+within a single, efficient system.
+
+\section{Limitations of Existing Systems}
+
+Despite the advancements in online interview platforms, several limitations exist in
+current systems. One major limitation is the lack of integration between different
+tools. Organizations often rely on separate platforms for video communication,
+coding tests, and candidate evaluation, which increases complexity and reduces
+efficiency.
+
+Another limitation is the absence of real-time collaborative environments in many
+coding platforms. While coding systems allow problem-solving, they do not always
+support live interaction between interviewers and candidates, making it difficult to
+assess communication skills and thought processes.
+
+Many systems also lack structured interview workflows. Scheduling, conducting,
+and evaluating interviews are often handled separately, leading to disorganized
+processes. Additionally, advanced platforms with integrated features are often
+costly and require complex infrastructure, limiting their accessibility for smaller
+organizations or individual users.
+
+Scalability and usability are also concerns in several systems. Some platforms are
+not optimized for real-time performance or require extensive setup and maintenance.
+Security and role-based access control are other areas where existing solutions may
+fall short.
+
+These limitations highlight the need for a lightweight, scalable, and fully integrated
+live coding interview platform that combines scheduling, real-time communication,
+collaborative coding, and evaluation features in a single system.
+
+\section{Advantages of the Proposed System}
+
+\begin{itemize}
+  \item Provides an integrated platform combining video communication, live coding, and interview management.
+  \item Enables real-time video and audio interaction using Stream Video SDK.
+  \item Includes an interactive code editor with syntax highlighting for live coding assessments.
+  \item Supports collaboration features such as screen sharing, recording, and real-time reactions.
+  \item Implements secure authentication and role-based access control using Clerk.
+  \item Utilizes Convex for real-time backend operations, ensuring efficient data synchronization.
+  \item Offers a dashboard for scheduling interviews, reviewing recordings, and managing feedback.
+  \item Provides a scalable and user-friendly interface suitable for modern remote hiring systems.
+\end{itemize}
+
+
+
+\chapter{System Analysis}
+\label{Chapter3}
+\lhead{Chapter 3. \emph{System Analysis}}
+
+System analysis focuses on understanding the requirements, scope, and constraints
+of the proposed \textbf{Live Code Interview Platform}. The system is designed
+to support interview scheduling, real-time communication, collaborative coding,
+and structured evaluation. It integrates secure user authentication, role-based
+access control, and real-time backend operations. The analysis phase helps in
+identifying user needs and defining system functionalities to ensure reliable and
+scalable implementation.
+
+\section{Requirement Analysis}
+
+Requirement analysis identifies the expectations of different users interacting
+with the system. The proposed platform mainly supports two types of users:
+interviewers and candidates. Interviewers require tools to schedule, conduct,
+and evaluate interviews, while candidates need a seamless interface to join
+sessions and participate in live coding assessments.
+
+The system must allow interviewers to create and manage interview sessions with
+relevant details such as title, description, participants, and timing. It should
+support real-time video and audio communication along with an interactive coding
+environment. The platform must provide features such as screen sharing,
+recording, and live collaboration. Secure user authentication and role management
+must be handled using Clerk services. Additionally, the system should manage
+real-time data efficiently using Convex as the backend service. The platform
+must be deployable on cloud infrastructure and capable of handling real-world
+interview scenarios.
+
+\section{Functional and Non-Functional Requirements}
+
+The requirements of the proposed system are categorized into functional and
+non-functional requirements.
+
+\textbf{Functional Requirements:}
+\begin{itemize}
+  \item The system shall allow users to register and log in securely using Clerk
+        authentication.
+  \item The system shall enable interviewers to schedule and manage interview
+        sessions with candidates.
+  \item The system shall support real-time video and audio communication using
+        Stream Video SDK.
+  \item The system shall provide an interactive code editor for live coding with
+        syntax highlighting.
+  \item The system shall allow users to join instant or scheduled interview sessions.
+  \item The system shall support collaboration features such as screen sharing,
+        recording, and real-time reactions.
+  \item The system shall store and manage interview data, recordings, and feedback
+        using Convex backend services.
+  \item The system shall provide a dashboard for reviewing interviews and managing
+        candidate evaluations.
+\end{itemize}
+
+\textbf{Non-Functional Requirements:}
+\begin{itemize}
+  \item The system should be scalable to support multiple concurrent interview
+        sessions.
+  \item The system should provide low-latency real-time communication for smooth
+        video and coding interaction.
+  \item The system should ensure data security, privacy, and secure API
+        communication.
+  \item The system should be reliable and available for uninterrupted interview
+        sessions.
+  \item The system should offer a user-friendly and intuitive interface for both
+        interviewers and candidates.
+  \item The system should support efficient deployment and performance optimization
+        using modern cloud-based practices.
+\end{itemize}
+
+\chapter{System Design}
+\label{Chapter4}
+\lhead{Chapter 4. \emph{System Design}}
+
+The system design of the proposed \textbf{Live Code Interview Platform}
+describes how different components of the application are organized and
+integrated to support real-time interview scheduling, video communication,
+collaborative coding, user authentication, and evaluation management. The design
+is based on a modern full-stack architecture to ensure scalability,
+maintainability, and efficient system performance.
+
+\section{System Architecture}
+
+The application is designed using a full-stack architecture based on Next.js,
+where frontend and backend functionalities are handled within a unified
+framework. The frontend manages user interactions such as interview scheduling,
+joining sessions, live coding, and dashboard access. The backend handles
+real-time communication, API integration, authentication, and data operations.
+
+User actions related to interview scheduling and session management are processed
+through backend services. Real-time video and audio communication is powered by
+the Stream Video SDK. Clerk is used for secure user authentication and role-based
+access control. All application data, including users, interview sessions,
+participants, recordings, and feedback, is managed using Convex for real-time
+data synchronization. The system is designed to support scalable deployment and
+efficient performance in real-world scenarios.
+
+\section{Data Flow Diagram}
+
+The data flow in the system begins with user registration and login through
+Clerk authentication services. Interviewers create interview sessions by
+providing details such as title, description, and participants. This information
+is processed by the backend and stored in the database.
+
+During live sessions, real-time communication and coding interactions occur
+through integrated services. Data related to session activity, recordings, and
+user interactions is continuously synchronized with the backend. After the
+interview, feedback and evaluation data are stored and accessed through the
+dashboard.
+
+The data flow illustrates interaction among users, real-time communication
+services, and backend systems responsible for data storage and synchronization.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/dataflow.png}
+    \caption{Data Flow Diagram}
+    \label{fig:flow}
+\end{figure}
+
+\section{UML Diagrams}
+
+The system design includes UML diagrams that represent user interactions and
+data relationships within the platform. The diagrams cover actions such as
+user registration, interview scheduling, joining sessions, live coding,
+and feedback submission. Key system entities include User, Interview,
+Session, Participant, Recording, and Feedback, along with their relationships
+and interactions.
+
+Sequence representations describe the execution flow of major processes such
+as interview session creation, real-time communication, and feedback management.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth,height=0.35\textheight,keepaspectratio]{Pictures/uml.png}
+    \caption{UML Diagram}
+    \label{fig:uml}
+\end{figure}
+
+
+\chapter{Technology Stack and Tools}
+\label{Chapter5}
+\lhead{Chapter 5. \emph{Technology Stack and Tools}}
+
+This chapter describes the technologies and tools used for the development of the
+\textbf{Live Code Interview Platform}. The selected technologies ensure efficient
+development, real-time performance, scalability, and ease of deployment.
+
+\section{Programming Languages}
+
+The platform is primarily developed using \textbf{JavaScript and Type\-Script}.
+Java\-Script is used for frontend and backend logic, while TypeScript enhances code
+reliability through static type checking. It helps in building a robust and
+maintainable codebase for handling real-time interactions and application logic.
+
+\section{Frameworks}
+
+The application is built using the \textbf{Next.js} framework, which supports both
+frontend and backend development within a unified environment. It enables
+server-side rendering, API routes, and optimized performance. \textbf{Clerk} is
+used for secure user authentication and role-based access control. Real-time video
+and audio communication is powered by the \textbf{Stream Video SDK}, enabling
+live interview sessions. The backend is managed using \textbf{Convex}, which
+handles real-time data synchronization, queries, and mutations efficiently.
+
+\section{Database}
+
+The system uses \textbf{Convex} as the primary backend data platform, which
+provides real-time database capabilities and efficient data handling. It manages
+application data such as users, interview sessions, participants, recordings,
+and feedback. The system ensures fast data synchronization and consistency
+during live interactions.
+
+\section{Tools and IDE}
+
+Development is carried out using \textbf{Visual Studio Code} as the primary IDE.
+Version control is managed using \textbf{Git}. API testing and debugging are
+performed using browser developer tools. Additional libraries such as Tailwind
+CSS and Shadcn UI are used for building a responsive and modern user interface.
+
+\section{Hardware and Software Requirements}
+
+The application can run on standard hardware with a minimum of 8 GB RAM and a
+modern processor. Software requirements include a web browser, Node.js runtime,
+and an internet connection. The system is platform-independent and can be
+accessed from any device with a compatible browser, ensuring flexibility for
+both interviewers and candidates.
+
+\chapter{Implementation}
+\label{Chapter6}
+\lhead{Chapter 6. \emph{Implementation}}
+
+This chapter explains the implementation of the proposed
+\textbf{Live Code Interview Platform}. The system is implemented using
+a modular approach where each module handles a specific responsibility such as
+user authentication, interview scheduling, live session management, and
+evaluation. This modular design improves maintainability, scalability, and
+clarity of the application.
+
+\section{Module-Wise Implementation}
+
+\subsection{Workspace Module}
+
+\begin{itemize}
+    \item The Workspace module serves as the central dashboard of the application.
+    
+    \item User authentication is handled using Clerk. Access to the Workspace is
+    restricted to authenticated users only.
+    
+    \item The \textit{Get Started} button checks the authentication state and
+    redirects signed-in users to the Workspace and others to the Sign-In page.
+    
+    \item After successful login, users can view scheduled interviews, upcoming
+    sessions, and interview history.
+    
+    \item Interviewers can create and manage interview sessions by providing
+    details such as title, description, participants, and timing.
+    
+    \item Candidates can view assigned interviews and directly join live sessions
+    from the dashboard.
+    
+    \item The Workspace provides navigation to modules such as interview
+    scheduling, session management, and feedback dashboard.
+    
+    \item The user interface is built using Next.js and Tailwind CSS, ensuring a
+    responsive and user-friendly experience across devices.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/dashboard.png}
+    \caption{Workspace (Main Dashboard)}
+    \label{fig:workspace}
+\end{figure}
+
+
+\subsection{Authentication Module}
+
+The authentication module is implemented using \textbf{Clerk}. It handles user
+registration, login, logout, and session management. Clerk provides secure and
+scalable authentication without requiring manual password handling.
+
+Role-based access control is implemented to differentiate between interviewers
+and candidates. Authentication state is maintained across the application,
+allowing secure access to protected routes such as interview scheduling,
+session joining, and evaluation pages.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/sign-in.png}
+    \caption{Sign In}
+    \label{fig:signin}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/sign-up.png}
+    \caption{Sign Up}
+    \label{fig:signup}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/profile-page.png}
+    \caption{Profile Page}
+    \label{fig:profile}
+\end{figure}
+
+
+\subsection{Interview Management Module}
+
+The Interview Management Module is responsible for creating, scheduling, and
+managing interview sessions. Interviewers can define session details such as
+title, description, candidate information, and assigned interviewers.
+
+User input is processed and stored in the backend using Convex, which ensures
+real-time synchronization of interview data. The system supports both scheduled
+and instant interview sessions, allowing flexibility in conducting interviews.
+
+All interview-related data, including session metadata and participant details,
+is stored in a structured format and made accessible through the dashboard for
+easy management and tracking.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/scheduling-meeting.png}
+    \caption{Scheduling Interview}
+    \label{fig:scheduling}
+\end{figure}
+
+\subsection{Live Session Module}
+
+The Live Session Module enables real-time interaction between interviewers and
+candidates. It integrates video and audio communication using the
+\textbf{Stream Video SDK}.
+
+Users join a setup page where they configure their camera and microphone before
+entering the meeting room. Inside the session, users can interact through video,
+audio, and chat features.
+
+An integrated code editor allows candidates to write and execute code in real
+time with syntax highlighting. Collaboration tools such as screen sharing,
+recording, and live reactions enhance the interview experience and enable
+effective evaluation.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/video-calling.png}
+    \caption{Interview Session Interface}
+    \label{fig:session}
+\end{figure}
+
+\subsection{Evaluation Module}
+
+The evaluation module allows interviewers to review candidate performance after
+the interview session. Interview recordings are stored and can be accessed
+through the dashboard.
+
+Interviewers can provide structured feedback, assign ratings, and store
+evaluation data in the backend. This ensures consistency in assessment and
+helps in decision-making during the hiring process.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Pictures/interview-review.png}
+    \caption{Evaluation Dashboard}
+    \label{fig:billing}
+\end{figure}
+
+\section{Code Explanation}
+
+The application code is structured using a clean and organized folder hierarchy.
+Frontend components handle UI rendering, while backend logic is implemented using
+Convex queries and mutations.
+
+Real-time communication is handled through Stream SDK integration, enabling
+low-latency video and audio interactions. Interview data is processed and stored
+using Convex, ensuring synchronization across all users.
+
+Authentication logic is managed through Clerk SDKs, reducing the need for custom
+security implementations. Error handling mechanisms are implemented to manage
+network failures and invalid inputs, ensuring system stability.
+
+\section{Deployment and Maintenance}
+
+Deployment and maintenance ensure that the proposed
+\textbf{Live Code Interview Platform} operates reliably in a real-world
+environment. The system is deployed using modern cloud-based practices to ensure
+scalability and availability.
+
+\subsection{Web Services Used}
+
+The deployment of the system involves the following web services and technologies:
+\begin{itemize}
+  \item The application is built using \textbf{Next.js} and runs on the
+        \textbf{Node.js} runtime environment.
+  \item \textbf{Convex} is used as the backend service for real-time data handling.
+  \item \textbf{Stream Video SDK} is used for video and audio communication.
+  \item \textbf{Clerk services} handle user authentication and role management.
+  \item Environment variables are used to securely manage API keys and credentials.
+  \item The system is designed to be deployed on scalable cloud infrastructure.
+\end{itemize}
+
+\subsection{Maintenance Strategy}
+
+The system follows the following maintenance practices to ensure reliability and
+long-term performance:
+\begin{itemize}
+  \item Regular monitoring of application performance and error logs.
+  \item Continuous tracking of real-time session performance and latency.
+  \item Backend data consistency is maintained through Convex services.
+  \item Security updates and dependency management are handled regularly.
+  \item Sensitive information such as API keys is stored securely using
+        environment variables.
+  \item Application updates and feature enhancements are deployed with minimal
+        disruption to users.
+\end{itemize}
+
+
+\chapter{Conclusion and Future Work}
+\label{Chapter7}
+\lhead{Chapter 7. \emph{Conclusion and Future Work}}
+
+\section{Conclusion}
+
+The following conclusions can be drawn from the successful implementation of the
+\textbf{Live Code Interview Platform}:
+
+\begin{itemize}
+  \item The project demonstrates an effective approach to conducting real-time
+        technical interviews by integrating video communication and collaborative
+        coding within a single platform.
+  \item The use of Stream Video SDK enables seamless real-time video and audio
+        interaction, improving communication between interviewers and candidates.
+  \item The integrated code editor allows live coding with syntax highlighting,
+        enhancing the technical assessment process.
+  \item Secure user authentication and role-based access control are implemented
+        using Clerk services, ensuring reliable and safe access management.
+  \item The platform efficiently handles real-time data synchronization using
+        Convex, providing consistency and low-latency performance.
+  \item The system supports structured interview workflows, including scheduling,
+        live sessions, recording, and post-interview evaluation.
+  \item Overall, the system serves as a scalable, user-friendly, and efficient
+        solution for modern remote hiring processes.
+\end{itemize}
+
+\section{Future Enhancements}
+
+The following enhancements can be considered to improve the system in the future:
+
+\begin{itemize}
+  \item Integration of AI-based candidate evaluation and automated feedback
+        generation to assist interviewers.
+  \item Addition of code execution and automated test case validation within the
+        code editor.
+  \item Implementation of anti-cheating mechanisms such as tab-switch detection
+        and activity monitoring.
+  \item Development of a mobile application to improve accessibility across
+        different devices.
+  \item Integration of analytics dashboards for tracking interview performance
+        and candidate insights.
+  \item Enhancement of scalability using advanced cloud infrastructure and load
+        balancing techniques.
+  \item Improvement of security features and advanced role-based access control
+        mechanisms.
+\end{itemize}

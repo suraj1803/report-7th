@@ -1,0 +1,271 @@
+\documentclass[12pt, a4paper, oneside]{Thesis} % Paper size, default font size and one-sided paper
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{lineno}
+\modulolinenumbers[5]
+
+\usepackage{array}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{stackengine}
+\usepackage{numprint}
+\usepackage{siunitx}
+%\usepackage[showframe=false]{geometry}
+
+\nprounddigits{3}
+\emergencystretch=1em
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\setstackEOL{\#}
+\setstackgap{L}{12pt}
+
+
+%\usepackage{subcaption} %incompatible with subfig
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\usepackage[numbers]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers'
+
+\hypersetup{urlcolor=black, colorlinks=false} % Colors hyperlinks in blue - change to black if annoying
+
+\thesistitle{Live Code Interview Platform}
+\supervisor{\shortstack{Dr. Amit Kumar Khaskalam }}
+\degree{Bachelor of Technology}
+\degreemajor{Information Technology, 6th Sem}
+\authors{Brijesh kumar, Narendra, Suraj Biswas}
+\rollno{23036115, 23036134, 23036168}
+\university{Guru Ghasidas Vishwavidyalaya}
+\department{Department of Information Technology}
+\unisite{http://www.ggu.ac.in}
+\depsite{https://www.ggu.ac.in/Department-Details.aspx?Id=MTY=}
+\placeshrt{Bilaspur}
+\placelng{Bilaspur - 495009, India}
+\datesub{December 23, 2026}
+\datesig{December 23, 2026}
+\semsub{}
+\keywords{XXXXXXXXXXX}
+\coursecd{Project (ITUFPV1) Report}
+
+\title{\ttitle} % Defines the thesis title - don't touch this
+\begin{document}
+%\makeatletter
+%\renewcommand*{\NAT@nmfmt}[1]{\textsc{#1}}
+%\makeatother
+
+% prints author names as small caps
+
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.6} % Line spacing of 1.6 (double line spacing)
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{plain} % Use plain page style for frontmatter pages prior to Contents
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\maketitle
+%\titlepg % Add a gap in the Contents, for aesthetics
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%	Your institution may give you a different text to place here
+%----------------------------------------------------------------------------------------
+
+
+\Declaration{} % Add a gap in the Contents, for aesthetics
+
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATE PAGE
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Certificate} % Add the "Abstract" page entry to the Contents
+
+\certificate{\addtocontents{toc}{}} % Add a gap in the Contents, for aesthetics
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
+
+\abstract{\addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
+
+}
+
+\clearpage % Start a new page
+
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\setstretch{1.7} % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+\acknowledgements{\addtocontents{toc}{}%\vspace{1em}} % Add a gap in the Contents, for aesthetics
+
+We express our sincere gratitude to \textbf{Dr. Amit Kumar Khaskalam}, Associate Professor, Department of Information Technology, who served as the \textbf{Project Guide} for this project. We are deeply thankful for his valuable guidance, continuous encouragement, constructive suggestions, and constant supervision throughout the course of this work.
+
+We would like to express our sincere thanks to the \textbf{Project In-Charge}, \textbf{Mr. Deepak Kant Netam}, Assistant Professor, Department of Information Technology, for his guidance, coordination, and support during the execution of this mini project.
+
+We would also like to express our heartfelt gratitude to the Head of the Department of Information Technology, \textbf{Dr. Manoj Kumar}, for his leadership, motivation, and for providing the necessary academic support and resources during the development of this project.
+
+We are extremely thankful to \textbf{Prof. M. Chakradhara Rao}, Dean, School of Studies in Engineering and Technology, Guru Ghasidas Vishwavidyalaya, for providing the required infrastructural facilities and a conducive academic environment, without which this work would not have been possible.
+
+We also wish to extend our sincere thanks to the faculty members of the Department of Information Technology and our classmates for their inspiration, encouragement, insightful comments, and constructive suggestions, which helped in improving the quality of this project work.
+
+
+
+}
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+%
+%\clearpage % Start a new page
+%
+%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
+%
+%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+%{
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
+%% Constant Name & Symbol & = & Constant Value (with units) \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+%
+%\setstretch{1.3} % Return the line spacing back to 1.3
+%
+%\pagestyle{empty} % Page style needs to be empty for this page
+%
+%\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
+%
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter1}
+%\input{Chapters/Chapter4} 
+%\input{Chapters/Chapter5} 
+%\input{Chapters/Chapter6} 
+%\input{Chapters/Chapter7} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+%\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+
+\addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
+
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\lhead{\emph{Bibliography}}
+%\nocite{*}
+\begin{thebibliography}{99}
+
+\bibitem{nextjs}
+Vercel, \textit{Next.js Documentation: The React Framework for the Web}.  
+Available: https://nextjs.org/docs
+
+\bibitem{convex}
+Convex, Inc., \textit{Convex Documentation: The Full-stack TypeScript Backend}.  
+Available: https://docs.convex.dev
+
+\bibitem{clerk}
+Clerk Inc., \textit{Clerk Authentication and User Management Documentation}.  
+Available: https://clerk.com/docs
+
+\bibitem{getstream}
+Stream.io, Inc., \textit{Stream Video SDK Documentation: Real-time Video and Audio Components}.  
+Available: https://getstream.io/video/docs
+
+\bibitem{tailwind}
+Tailwind Labs, \textit{Tailwind CSS: Utility-First CSS Framework Documentation}.  
+Available: https://tailwindcss.com/docs
+
+\bibitem{shadcn}
+Shadcn, \textit{shadcn/ui: Reusable components built using Radix UI and Tailwind CSS}.  
+Available: https://ui.shadcn.com
+
+\bibitem{svix}
+Svix Inc., \textit{Svix Webhook Documentation: Secure Webhook Verification and Delivery}.  
+Available: https://docs.svix.com
+
+\bibitem{typescript}
+Microsoft, \textit{TypeScript Documentation: Typed JavaScript at Any Scale}.  
+Available: https://www.typescriptlang.org/docs
+
+\end{thebibliography}
+
+
+
+
+\end{document}  
