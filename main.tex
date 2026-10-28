@@ -27,11 +27,11 @@
 
 \hypersetup{urlcolor=black, colorlinks=false} % Colors hyperlinks in blue - change to black if annoying
 
-\thesistitle{Live Code Interview Platform}
+\thesistitle{ManologAI: Unified Personal Life Analytics and Behavioral Insight Engine}
 \supervisor{\shortstack{Dr. Amit Kumar Khaskalam }}
 \degree{Bachelor of Technology}
-\degreemajor{Information Technology, 6th Sem}
-\authors{Brijesh kumar, Narendra, Suraj Biswas}
+\degreemajor{Information Technology, 7th Sem}
+\authors{Brijesh Kumar, Narendra, Suraj Biswas}
 \rollno{23036115, 23036134, 23036168}
 \university{Guru Ghasidas Vishwavidyalaya}
 \department{Department of Information Technology}
@@ -39,11 +39,12 @@
 \depsite{https://www.ggu.ac.in/Department-Details.aspx?Id=MTY=}
 \placeshrt{Bilaspur}
 \placelng{Bilaspur - 495009, India}
-\datesub{December 23, 2026}
-\datesig{December 23, 2026}
+\datesub{30, Oct 2027}
+\datesig{30, Oct 2027}
+\sessionyr{Session 2026-2027}
 \semsub{}
-\keywords{XXXXXXXXXXX}
-\coursecd{Project (ITUFPV1) Report}
+\keywords{Quantified-Self, Personal Life Analytics, Behavioral Intelligence, Pearson Correlation, Progressive Web App, VAPID Web Push, Full-Stack Architecture}
+\coursecd{Minor Project (ITUGPV1) Report}
 
 \title{\ttitle} % Defines the thesis title - don't touch this
 \begin{document}
@@ -94,25 +95,19 @@
 %	CERTIFICATE PAGE
 %----------------------------------------------------------------------------------------
 
-\addtotoc{Certificate} % Add the "Abstract" page entry to the Contents
+\addtotoc{Certificate} % Add the "Certificate" page entry to the Contents
 
 \certificate{\addtocontents{toc}{}} % Add a gap in the Contents, for aesthetics
 
 \clearpage % Start a new page
 
 %----------------------------------------------------------------------------------------
-%	ABSTRACT PAGE
+%	PROJECT APPROVAL SHEET
 %----------------------------------------------------------------------------------------
 
-\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
-
-\abstract{\addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
-
-}
+\ApprovalSheet
 
 \clearpage % Start a new page
-
-
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
@@ -124,7 +119,7 @@
 
 We express our sincere gratitude to \textbf{Dr. Amit Kumar Khaskalam}, Associate Professor, Department of Information Technology, who served as the \textbf{Project Guide} for this project. We are deeply thankful for his valuable guidance, continuous encouragement, constructive suggestions, and constant supervision throughout the course of this work.
 
-We would like to express our sincere thanks to the \textbf{Project In-Charge}, \textbf{Mr. Deepak Kant Netam}, Assistant Professor, Department of Information Technology, for his guidance, coordination, and support during the execution of this mini project.
+We would like to express our sincere thanks to the \textbf{Project In-Charge}, \textbf{Mr. Deepak Kant Netam}, Assistant Professor, Department of Information Technology, for his guidance, coordination, and support during the execution of this project.
 
 We would also like to express our heartfelt gratitude to the Head of the Department of Information Technology, \textbf{Dr. Manoj Kumar}, for his leadership, motivation, and for providing the necessary academic support and resources during the development of this project.
 
@@ -135,6 +130,23 @@ We also wish to extend our sincere thanks to the faculty members of the Departme
 
 
 }
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\setstretch{1.6}
+
+\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
+
+\abstract{\addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
+In modern digital productivity, personal life data is fundamentally fragmented across isolated silos such as disparate journaling tools, habit trackers, and health applications, preventing users from understanding cross-domain behavioral patterns. This project presents \textbf{ManologAI}, an engineering-grade, privacy-first personal life analytics platform and behavioral insight engine. Designed to resolve the fragmented ``Quantified-Self'' problem, ManologAI unites qualitative daily reflections and an 8-scale quantized emotion tracking system with quantitative lifestyle metrics (sleep duration, screen time, study hours, habits, expenses, and weekly timetables) into a single cohesive data pipeline.
+
+Unlike conventional platforms relying on non-deterministic generative models that risk hallucination, ManologAI incorporates a deterministic behavioral intelligence engine utilizing Pearson correlation coefficient ($r$) analysis and counterfactual baseline evaluation ($\Delta$) to reveal empirical cause-and-effect relationships between daily routines and psychological valence. To guarantee data integrity and eliminate retrospective falsification, the platform enforces a strict 24-hour temporal integrity lock. Built on a decoupled four-tier architecture featuring React 19, Vite, Tailwind CSS, Node.js, Express 5, and MongoDB with standards-compliant RFC 8291/8292 VAPID Web Push notifications, ManologAI delivers a frictionless sub-two-minute daily logging ritual, robust data integrity, and actionable personal intelligence for lifestyle optimization.
+}
+
+\setstretch{1.7}
 \clearpage % Start a new page
 
 %----------------------------------------------------------------------------------------
@@ -231,37 +243,44 @@ We also wish to extend our sincere thanks to the faculty members of the Departme
 %\nocite{*}
 \begin{thebibliography}{99}
 
-\bibitem{nextjs}
-Vercel, \textit{Next.js Documentation: The React Framework for the Web}.  
-Available: https://nextjs.org/docs
+\bibitem{quantifiedself}
+M. Swan, \textit{The Quantified Self: Searching for Meaning in Sensor Data}, \textit{Sensor and Actuator Networks}, vol. 2, no. 4, pp. 217--253, 2013.
 
-\bibitem{convex}
-Convex, Inc., \textit{Convex Documentation: The Full-stack TypeScript Backend}.  
-Available: https://docs.convex.dev
+\bibitem{pearson}
+K. Pearson, \textit{Mathematical Contributions to the Theory of Evolution. III. Regression, Heredity, and Panmixia}, \textit{Philosophical Transactions of the Royal Society of London}, Series A, vol. 187, pp. 253--318, 1896.
 
-\bibitem{clerk}
-Clerk Inc., \textit{Clerk Authentication and User Management Documentation}.  
-Available: https://clerk.com/docs
+\bibitem{react}
+Meta Platforms, Inc., \textit{React 19 Documentation: The Library for Web and Native User Interfaces}. Available: https://react.dev
 
-\bibitem{getstream}
-Stream.io, Inc., \textit{Stream Video SDK Documentation: Real-time Video and Audio Components}.  
-Available: https://getstream.io/video/docs
+\bibitem{nodejs}
+OpenJS Foundation, \textit{Node.js Documentation and Runtime Environment}. Available: https://nodejs.org
+
+\bibitem{express}
+Express.js Foundation, \textit{Express 5.x: Fast, Unopinionated, Minimalist Web Framework for Node.js}. Available: https://expressjs.com
+
+\bibitem{mongodb}
+MongoDB, Inc., \textit{MongoDB Manual: Document-Oriented Database and Indexing Engine}. Available: https://www.mongodb.com/docs
+
+\bibitem{mongoose}
+Automattic, \textit{Mongoose 9.x: Elegant MongoDB Object Modeling for Node.js}. Available: https://mongoosejs.com/docs
+
+\bibitem{vapid}
+M. Thomson and P. Beverloo, \textit{Message Encryption for Web Push}, Internet Engineering Task Force (IETF) RFC 8291, 2017.
+
+\bibitem{vapid2}
+M. Thomson, \textit{Generic Event Delivery Using HTTP Push}, Internet Engineering Task Force (IETF) RFC 8292, 2017.
+
+\bibitem{jwt}
+M. Jones, J. Bradley, and N. Sakimura, \textit{JSON Web Token (JWT)}, Internet Engineering Task Force (IETF) RFC 7519, 2015.
+
+\bibitem{recharts}
+Recharts Group, \textit{Recharts: A Redefined Chart Library Built with React and D3}. Available: https://recharts.org
+
+\bibitem{pwa}
+World Wide Web Consortium (W3C), \textit{Progressive Web Applications Architecture and Service Workers Specification}. Available: https://www.w3.org/TR/service-workers/
 
 \bibitem{tailwind}
-Tailwind Labs, \textit{Tailwind CSS: Utility-First CSS Framework Documentation}.  
-Available: https://tailwindcss.com/docs
-
-\bibitem{shadcn}
-Shadcn, \textit{shadcn/ui: Reusable components built using Radix UI and Tailwind CSS}.  
-Available: https://ui.shadcn.com
-
-\bibitem{svix}
-Svix Inc., \textit{Svix Webhook Documentation: Secure Webhook Verification and Delivery}.  
-Available: https://docs.svix.com
-
-\bibitem{typescript}
-Microsoft, \textit{TypeScript Documentation: Typed JavaScript at Any Scale}.  
-Available: https://www.typescriptlang.org/docs
+Tailwind Labs, \textit{Tailwind CSS: Utility-First CSS Framework Documentation}. Available: https://tailwindcss.com/docs
 
 \end{thebibliography}
 

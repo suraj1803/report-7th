@@ -179,6 +179,8 @@
 \newcommand*{\degreemajor}[1]{\def\degreenamemajor{#1}}
 \newcommand*{\coursecd}[1]{\def\coursecds{#1}}
 \newcommand*{\datesig}[1]{\def\datesign{#1}}
+\newcommand*{\sessionyr}[1]{\def\sessionyear{#1}}
+\sessionyr{Session 2026-2027}
 
 %----------------------------------------------------------------------------------------
 %	DOCUMENT VARIABLES
@@ -266,8 +268,7 @@ Under the supervision of \par
 To \par
 \deptname \par
 \univname \par
-\semsubs \par
-\datesubs \par
+\sessionyear \par
 }
 
 \end{spacing}
@@ -344,10 +345,9 @@ We certify that\par
 \item The work has not been submitted to any other Institute for any curriculum.
 \item We have conformed to the norms and guidelines given in the Ethical Code of Conduct of the Institute.
 \item Whenever we have used materials (data, theoretical analysis, figures, and text) from other sources, we have given due credit to them by citing them in the text of the thesis and giving their details in the references. Further, we have taken permission from the copyright owners of the sources, whenever necessary.
-
-
-We hereby declare that the project entitled – “Live Code Interview Platform”, which is being submitted as a Project of the 6th Semester to Guru Ghasidas Vishwavidyalaya, Bilaspur(C.G.) is an authentic record of our genuine work done under the guidance of \textbf{Dr. Amit Kumar Khaskalam}, Associate Professor, Dept. of Information Technology, SOS Engineering and Technology, Guru Ghasidas Vishwavidyalaya (A Central University), Bilaspur, Chhattisgarh. 
 \end{enumerate}
+
+We hereby declare that the project entitled -- ``\textbf{\ttitle}'', which is being submitted as a Project of \textbf{\degreenamemajor} to Guru Ghasidas Vishwavidyalaya, Bilaspur (C.G.) is an authentic record of our genuine work done under the guidance of \textbf{\supname}, Associate Professor, Department of Information Technology, SOS Engineering and Technology, Guru Ghasidas Vishwavidyalaya (A Central University), Bilaspur, Chhattisgarh.
 \vfill
 Date: \datesign\hfill (\authornames)\par
 \vspace{-15pt}
@@ -399,15 +399,14 @@ Under the supervision of \par
 \supname \par
 }
 \vfill
-\includegraphics[height=4cm]{logo.jpg}\par
+\includegraphics[height=4cm]{Pictures/ggv-logo.png}\par
 
 \vfill
 	
 {\bfseries
 \deptname \par
 \univname \par
-\semsubs \par
-\datesubs \par
+\sessionyear \par
 }
 
 \end{spacing}
@@ -434,19 +433,14 @@ Under the supervision of \par
     \bigskip
     \HRule \\[0.4cm] % Horizontal line
 		Name of the student:	 \textbf{\authornames}	\\ Roll No: \textbf{\rollnumber} \\
-		Curriculum for which submitted:  \textbf{6th Sem, Project} \\
+		Curriculum for which submitted:  \textbf{\degreenamemajor, Project} \\
         Degree: \textbf{Bachelor Of Technology} \\
 		Department:  \textbf{\deptname} \\
 		Project Name: \textbf{\@title}\\
-		Project Supervisor:  \textbf{Dr. Amit Kumar Khaskalam}\\
+		Project Supervisor:  \textbf{\supname}\\
 		Month and year of thesis submission: \textbf{{{\datesubs}}\\[0.4cm] }
-		\HRule \\[1.5cm] % Horizontal line	
+		\HRule \\[0.8cm] % Horizontal line	
          \end{flushleft}
- The increasing demand for remote hiring and technical assessments has created challenges for organizations in conducting efficient, structured, and interactive coding interviews. This project presents a real-time, AI-assisted live coding interview platform developed using Next.js and modern full-stack technologies. The system enables seamless interview scheduling, live session management, and structured evaluation workflows, providing a complete solution for technical hiring processes. It allows interviewers to create interview sessions, invite candidates, and conduct assessments in an integrated environment.
-
-The platform incorporates real-time video and audio communication powered by Stream Video SDK, along with an interactive code editor that supports live coding with syntax highlighting. It also provides collaboration features such as screen sharing, recording, and real-time reactions to enhance the interview experience. Secure user authentication and role-based access control are implemented using Clerk, ensuring proper distinction between candidates and interviewers. The backend is managed using Convex, which handles real-time data synchronization, queries, and mutations efficiently.
-
-Additionally, the system includes post-interview evaluation tools where interviewers can review recordings, provide feedback, and assign ratings through an integrated dashboard. The application is built with a responsive UI using Tailwind CSS and Shadcn UI components for an optimized user experience. The overall system demonstrates scalability, reliability, and usability, making it suitable for practical deployment as a modern, lightweight alternative to platforms like HackerRank or CodeSignal.
 }{}
 %----------------------------------------------------------------------------------------
 
@@ -472,7 +466,7 @@ Additionally, the system includes post-interview evaluation tools where intervie
 %\soulregister\together{1}
 %\soulregister{\authornames}{0}
 
-This is to certify that the project report entitled {\textbf{\ttitle}} submitted by \textbf{\authornames} (Roll No. \rollnumber) to {\univname}, is a record of bonafide work carried out by them as a part of the curriculum requirements of the Information Technology 6th Semester Project under my supervision and guidance.
+This is to certify that the project report entitled {\textbf{\ttitle}} submitted by \textbf{\authornames} (Roll No. \rollnumber) to {\univname}, is a record of bonafide work carried out by them as a part of the curriculum requirements of the \degreenamemajor{} Project under my supervision and guidance.
 
 
 \vspace{2cm}
@@ -489,6 +483,59 @@ Place: \placesh & \\
 \vfil\vfil\null
 \cleardoublepage
 }{}
+
+%----------------------------------------------------------------------------------------
+%	PROJECT APPROVAL SHEET DESIGN
+%----------------------------------------------------------------------------------------
+\newcommand\ApprovalSheet{
+\btypeout{Project Approval Sheet}
+\addtotoc{Project Approval Sheet}
+\thispagestyle{plain}
+\begin{center}
+    \vspace*{1.2cm}
+    {\huge\bfseries Project Approval Sheet\par}
+\end{center}
+\vspace{1.5cm}
+
+\begin{spacing}{1.4}
+The project entitled \textbf{\ttitle} submitted by \textbf{\authornames} is submitted in partial fulfillment of the requirements for the \textbf{7th Semester Project} of the Bachelor of Technology in Information Technology at Guru Ghasidas Vishwavidyalaya, Bilaspur, and is hereby approved.
+\end{spacing}
+
+\vspace{2.2cm}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\begin{spacing}{1.1}
+\textbf{Internal Examiner}\par
+\vspace{0.4cm}
+Dr. Amit Kumar Khaskalam
+\end{spacing}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{spacing}{1.1}
+\textbf{External Examinee}\par
+\vspace{0.6cm}
+1. Dr. Amit Kumar Khaskalam\par
+\vspace{1.0cm}
+2. Mr. Suhel Ahamed\par
+\vspace{1.0cm}
+3. Mr. Bratin Chakrabarti
+\end{spacing}
+\end{minipage}
+
+\vfill
+
+\noindent
+\begin{spacing}{1.1}
+\textbf{Dr. Manoj Kumar}\par
+Head of the Department of Information Technology\par
+Guru Ghasidas Vishwavidyalaya
+\end{spacing}
+\vspace*{1cm}
+\cleardoublepage
+}
+
 %----------------------------------------------------------------------------------------
 %	DECLARATION DESIGN
 %----------------------------------------------------------------------------------------
