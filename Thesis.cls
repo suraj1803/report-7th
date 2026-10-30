@@ -242,8 +242,9 @@
 \vfill
 
 
-\normalsize{\textbf{\coursecds} \par
-\degreenamemajor \par
+\normalsize{As part of the academic requirements of \par
+\textbf{\degreenamemajor} \par
+\textbf{\coursecds} \par
 }
 \vspace{0.5cm}
 

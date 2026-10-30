@@ -136,28 +136,26 @@ Finally, we express our profound gratitude to our parents and families for their
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
-\setstretch{1.05}
+\setstretch{1.22}
 
 \addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
 
 \abstract{\addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
-\vspace{-0.7cm}
-{\setlength{\parskip}{5pt}\noindent
-This report presents \textbf{ManologAI}, a privacy-first personal life analytics platform and deterministic behavioral insight engine that unifies qualitative daily reflections and an 8-state discrete emotion tracking system with quantitative lifestyle metrics---sleep, screen time, study hours, habits, expenses, and timetables---into a single cohesive pipeline backed by a 24-hour temporal integrity lock.\par
+This report presents \textbf{ManologAI}, an engineering-grade, privacy-first personal life analytics platform and deterministic behavioral insight engine developed to resolve telemetry fragmentation in personal productivity tracking. Designed to overcome the limitations of isolated self-tracking applications, the platform unifies qualitative daily reflections and an 8-state discrete emotion tracking system with quantitative lifestyle metrics---including sleep duration, screen time, study hours, habits, financial expenses, and weekly timetables---into a single cohesive data pipeline backed by a strict 24-hour temporal integrity lock.
 
-\noindent\textbf{Chapter 1 (Introduction)} introduces the problem of telemetry fragmentation and retrospective bias in self-tracking tools, establishing the project's aim and objectives.\par
+\textbf{Chapter 1 (Introduction)} introduces the contemporary challenges of personal productivity, mental well-being, and the ``Quantified-Self'' movement. It examines the systemic issues of telemetry silos, cognitive tracking friction, and retrospective falsification in conventional applications, and establishes the overarching aim and technical objectives of the \textbf{ManologAI} platform.
 
-\noindent\textbf{Chapter 2 (Literature Review)} examines existing journaling, habit, mood, and biometric tracking paradigms, highlighting their limitations and the advantages of the proposed system.\par
+\textbf{Chapter 2 (Literature Review)} critically evaluates existing personal tracking paradigms across four major categories: digital journaling platforms, dedicated habit trackers, mood and affect loggers, and passive biometric ecosystems. It highlights their structural inability to perform cross-domain statistical correlation and details how the proposed system resolves these limitations through unified telemetry and privacy-first web push architecture.
 
-\noindent\textbf{Chapter 3 (System Analysis)} defines the operational requirement analysis alongside the functional and non-functional specifications for rapid multi-modal logging.\par
+\textbf{Chapter 3 (System Analysis)} establishes the operational requirement analysis and domain modeling required for a low-friction, high-integrity behavioral tracking platform. It specifies the functional requirements---spanning dual-token JWT authentication, multidimensional Wheel of Life ratings, habit streak scheduling, and automated correlation analytics---alongside non-functional constraints on latency, security, and temporal consistency.
 
-\noindent\textbf{Chapter 4 (System Design)} delineates the decoupled four-tier system architecture, data flow pipelines, UML modeling, and MongoDB database schemas.\par
+\textbf{Chapter 4 (System Design)} delineates the decoupled four-tier full-stack architecture comprising the React 19 Progressive Web App presentation tier, the security and temporal integrity gateway, the Express 5 application and intelligence tier, and the MongoDB persistence layer. It also illustrates the operational data flow pipelines, UML structural diagrams, and eight relational Mongoose schemas with compound unique indexing.
 
-\noindent\textbf{Chapter 5 (Technology Stack and Tools)} details the software stack, including React 19, Vite, Tailwind CSS, Node.js, Express 5, MongoDB, and VAPID Web Push technologies.\par
+\textbf{Chapter 5 (Technology Stack and Tools)} provides a comprehensive overview of the programming languages, frameworks, and infrastructure powering the system. It details the frontend client stack (React 19, Vite 8, Tailwind CSS v4, Recharts v3, Service Workers), the backend runtime and security libraries (Node.js, Express 5, JWT, Bcrypt, RFC 8291/8292 Web Push), and the database and quality verification tooling.
 
-\noindent\textbf{Chapter 6 (Implementation \& Mathematical Modeling)} formulates the deterministic intelligence algorithms---emotion quantization, Pearson correlation ($r$), counterfactual habit impact ($\Delta$), and the 24-hour temporal lock---along with core module implementation.\par
+\textbf{Chapter 6 (Implementation \& Mathematical Modeling)} formulates the deterministic behavioral intelligence engine, including the 8-state discrete emotion quantization matrix, Pearson correlation coefficient ($r$) regression across sliding temporal windows, counterfactual habit impact ($\Delta$) A/B evaluation, and diurnal boundary constraints. Furthermore, it describes the core full-stack implementation of atomic workspace ingestion, timetable collision detection, and the 24-hour temporal lock middleware.
 
-\noindent\textbf{Chapter 7 (Result and Discussion)} presents the user interface outcomes, empirical correlation findings, performance verification, conclusions, and future scope.\par}
+\textbf{Chapter 7 (Result and Discussion)} presents the empirical user interface outcomes across all core modules, longitudinal correlation discoveries linking sleep and screen time to emotional valence, and Wheel of Life balance visualizations. It concludes with system performance benchmarks from the 16-scenario integration test suite, comparative advantages over generative LLM trackers, final conclusions, and future enhancements.\par
 }
 
 \setstretch{1.7}
