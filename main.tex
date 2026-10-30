@@ -119,13 +119,13 @@
 
 We express our sincere gratitude to \textbf{Dr. Amit Kumar Khaskalam}, Associate Professor, Department of Information Technology, who served as the \textbf{Project Guide} for this project. We are deeply thankful for his valuable guidance, continuous encouragement, constructive suggestions, and constant supervision throughout the course of this work.
 
-We would like to express our sincere thanks to the \textbf{Project In-Charge}, \textbf{Mr. Deepak Kant Netam}, Assistant Professor, Department of Information Technology, for his guidance, coordination, and support during the execution of this project.
+We would like to express our sincere thanks to the \textbf{Project In-Charge}, \textbf{Mrs. Akanksha Gupta}, Assistant Professor, Department of Information Technology, for her guidance, coordination, and support during the execution of this project.
 
-We would also like to express our heartfelt gratitude to the Head of the Department of Information Technology, \textbf{Dr. Manoj Kumar}, for his leadership, motivation, and for providing the necessary academic support and resources during the development of this project.
+We also convey our heartfelt gratitude to \textbf{Dr. Manoj Kumar}, Head of the Department of Information Technology, and \textbf{Prof. M. Chakradhara Rao}, Dean, School of Studies in Engineering and Technology, for their leadership, constant support, and for providing the necessary infrastructural facilities and academic environment.
 
-We are extremely thankful to \textbf{Prof. M. Chakradhara Rao}, Dean, School of Studies in Engineering and Technology, Guru Ghasidas Vishwavidyalaya, for providing the required infrastructural facilities and a conducive academic environment, without which this work would not have been possible.
+We extend our sincere thanks to the faculty members of the Department of Information Technology and our classmates for their inspiration, encouragement, and valuable suggestions throughout this project.
 
-We also wish to extend our sincere thanks to the faculty members of the Department of Information Technology and our classmates for their inspiration, encouragement, insightful comments, and constructive suggestions, which helped in improving the quality of this project work.
+Finally, we express our profound gratitude to our parents and families for their unconditional love, continuous moral support, and endless sacrifices throughout our academic journey.
 
 
 
@@ -136,14 +136,28 @@ We also wish to extend our sincere thanks to the faculty members of the Departme
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
-\setstretch{1.6}
+\setstretch{1.05}
 
 \addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
 
 \abstract{\addtocontents{toc}{} % Add a gap in the Contents, for aesthetics
-In modern digital productivity, personal life data is fundamentally fragmented across isolated silos such as disparate journaling tools, habit trackers, and health applications, preventing users from understanding cross-domain behavioral patterns. This project presents \textbf{ManologAI}, an engineering-grade, privacy-first personal life analytics platform and behavioral insight engine. Designed to resolve the fragmented ``Quantified-Self'' problem, ManologAI unites qualitative daily reflections and an 8-scale quantized emotion tracking system with quantitative lifestyle metrics (sleep duration, screen time, study hours, habits, expenses, and weekly timetables) into a single cohesive data pipeline.
+\vspace{-0.7cm}
+{\setlength{\parskip}{5pt}\noindent
+This report presents \textbf{ManologAI}, a privacy-first personal life analytics platform and deterministic behavioral insight engine that unifies qualitative daily reflections and an 8-state discrete emotion tracking system with quantitative lifestyle metrics---sleep, screen time, study hours, habits, expenses, and timetables---into a single cohesive pipeline backed by a 24-hour temporal integrity lock.\par
 
-Unlike conventional platforms relying on non-deterministic generative models that risk hallucination, ManologAI incorporates a deterministic behavioral intelligence engine utilizing Pearson correlation coefficient ($r$) analysis and counterfactual baseline evaluation ($\Delta$) to reveal empirical cause-and-effect relationships between daily routines and psychological valence. To guarantee data integrity and eliminate retrospective falsification, the platform enforces a strict 24-hour temporal integrity lock. Built on a decoupled four-tier architecture featuring React 19, Vite, Tailwind CSS, Node.js, Express 5, and MongoDB with standards-compliant RFC 8291/8292 VAPID Web Push notifications, ManologAI delivers a frictionless sub-two-minute daily logging ritual, robust data integrity, and actionable personal intelligence for lifestyle optimization.
+\noindent\textbf{Chapter 1 (Introduction)} introduces the problem of telemetry fragmentation and retrospective bias in self-tracking tools, establishing the project's aim and objectives.\par
+
+\noindent\textbf{Chapter 2 (Literature Review)} examines existing journaling, habit, mood, and biometric tracking paradigms, highlighting their limitations and the advantages of the proposed system.\par
+
+\noindent\textbf{Chapter 3 (System Analysis)} defines the operational requirement analysis alongside the functional and non-functional specifications for rapid multi-modal logging.\par
+
+\noindent\textbf{Chapter 4 (System Design)} delineates the decoupled four-tier system architecture, data flow pipelines, UML modeling, and MongoDB database schemas.\par
+
+\noindent\textbf{Chapter 5 (Technology Stack and Tools)} details the software stack, including React 19, Vite, Tailwind CSS, Node.js, Express 5, MongoDB, and VAPID Web Push technologies.\par
+
+\noindent\textbf{Chapter 6 (Implementation \& Mathematical Modeling)} formulates the deterministic intelligence algorithms---emotion quantization, Pearson correlation ($r$), counterfactual habit impact ($\Delta$), and the 24-hour temporal lock---along with core module implementation.\par
+
+\noindent\textbf{Chapter 7 (Result and Discussion)} presents the user interface outcomes, empirical correlation findings, performance verification, conclusions, and future scope.\par}
 }
 
 \setstretch{1.7}

@@ -333,27 +333,36 @@ To \par
 \btypeout{Declaration}
 \addtotoc{Declaration}
 \thispagestyle{plain}
-%\null\vfil
-%\vskip 60\p@
 \begin{center}
-\large{\bfseries DECLARATION}
-\end {center}
-\vspace{1cm}
-We certify that\par
-\begin{enumerate}[label=(\alph*)]
-\item The work contained in this report has been done by us under the guidance of our supervisor.
-\item The work has not been submitted to any other Institute for any curriculum.
-\item We have conformed to the norms and guidelines given in the Ethical Code of Conduct of the Institute.
-\item Whenever we have used materials (data, theoretical analysis, figures, and text) from other sources, we have given due credit to them by citing them in the text of the thesis and giving their details in the references. Further, we have taken permission from the copyright owners of the sources, whenever necessary.
+{\huge\bfseries DECLARATION\par}
+\end{center}
+\vspace{0.8cm}
+
+We hereby declare that the minor project entitled -- ``\textbf{\ttitle}'', which is being submitted as part of the academic requirement for the \textbf{7th Semester of the Information Technology} to Guru Ghasidas Vishwavidyalaya, Bilaspur (C.G.), is an authentic record of our genuine work carried out under the guidance of \textbf{\supname}, Associate Professor, Department of Information Technology, Guru Ghasidas Vishwavidyalaya, Bilaspur.
+
+\vspace{0.4cm}
+We further certify that:
+\begin{enumerate}[label=(\alph*), noitemsep, topsep=4pt]
+\item The work contained in this report is original and has been done by us under the supervision of our guide.
+\item This work has not been submitted to any other institute for any degree or curriculum.
+\item All external sources, data, and references used in this report have been duly acknowledged and cited.
 \end{enumerate}
 
-We hereby declare that the project entitled -- ``\textbf{\ttitle}'', which is being submitted as a Project of \textbf{\degreenamemajor} to Guru Ghasidas Vishwavidyalaya, Bilaspur (C.G.) is an authentic record of our genuine work done under the guidance of \textbf{\supname}, Associate Professor, Department of Information Technology, SOS Engineering and Technology, Guru Ghasidas Vishwavidyalaya (A Central University), Bilaspur, Chhattisgarh.
+\vspace{2.2cm}
+\noindent
+{\renewcommand{\arraystretch}{0.9}%
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccc@{}}
+\textbf{Brijesh Kumar} & \textbf{Narendra} & \textbf{Suraj Biswas} \\
+(23036115) & (23036134) & (23036168)
+\end{tabular*}\par}
+
 \vfill
-Date: \datesign\hfill (\authornames)\par
-\vspace{-15pt}
-Place: \placesh \hfill (\rollnumber)%\vskip 60\p@
+\noindent
+\begin{spacing}{1.1}
+\textbf{Date:} \datesign\par
+\textbf{Place:} \placesh
+\end{spacing}
 {\normalsize #1}
-\vfil\vfil\null
 \cleardoublepage
 }
 
@@ -433,11 +442,11 @@ Under the supervision of \par
     \bigskip
     \HRule \\[0.4cm] % Horizontal line
 		Name of the student:	 \textbf{\authornames}	\\ Roll No: \textbf{\rollnumber} \\
-		Curriculum for which submitted:  \textbf{\degreenamemajor, Project} \\
+		Curriculum for which submitted:  \textbf{\degreenamemajor, Minor Project} \\
         Degree: \textbf{Bachelor Of Technology} \\
 		Department:  \textbf{\deptname} \\
-		Project Name: \textbf{\@title}\\
-		Project Supervisor:  \textbf{\supname}\\
+		Minor Project Name: \textbf{\@title}\\
+		Minor Project Supervisor:  \textbf{\supname}\\
 		Month and year of thesis submission: \textbf{{{\datesubs}}\\[0.4cm] }
 		\HRule \\[0.8cm] % Horizontal line	
          \end{flushleft}
@@ -466,7 +475,7 @@ Under the supervision of \par
 %\soulregister\together{1}
 %\soulregister{\authornames}{0}
 
-This is to certify that the project report entitled {\textbf{\ttitle}} submitted by \textbf{\authornames} (Roll No. \rollnumber) to {\univname}, is a record of bonafide work carried out by them as a part of the curriculum requirements of the \degreenamemajor{} Project under my supervision and guidance.
+This is to certify that the minor project report entitled {\textbf{\ttitle}} submitted by \textbf{\authornames} (Roll No. \rollnumber) to {\univname}, is a record of bonafide work carried out by them as a part of the curriculum requirements of the \degreenamemajor{} Minor Project under my supervision and guidance.
 
 
 \vspace{2cm}
@@ -498,7 +507,7 @@ Place: \placesh & \\
 \vspace{1.5cm}
 
 \begin{spacing}{1.4}
-The project entitled \textbf{\ttitle} submitted by \textbf{\authornames} is submitted in partial fulfillment of the requirements for the \textbf{7th Semester Project} of the Bachelor of Technology in Information Technology at Guru Ghasidas Vishwavidyalaya, Bilaspur, and is hereby approved.
+The minor project entitled \textbf{\ttitle} submitted by \textbf{\authornames} is submitted as part of the academic requirements for the \textbf{7th Semester Minor Project} of the Bachelor of Technology in Information Technology at Guru Ghasidas Vishwavidyalaya, Bilaspur, and is hereby approved.
 \end{spacing}
 
 \vspace{2.2cm}
